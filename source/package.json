@@ -22,7 +22,8 @@
     "gulp-jshint": "~1",
     "gulp-notify": "~1",
     "gulp-rename": "~1",
-    "gulp-livereload": "~2"
+    "gulp-livereload": "~2",
+    "gulp-header": "~1"
   },
   "devDependencies": {},
   "scripts": {
