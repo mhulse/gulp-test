@@ -72,3 +72,6 @@ sitemap.xml.gz*~
 
 # PROJECT-SPECIFIC #
 ####################
+
+.sass-cache
+node_modules

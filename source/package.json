@@ -1,0 +1,32 @@
+{
+  "title": "Evelyn “Angel” Martin",
+  "name": "evelyn",
+  "description": "Jimmy?",
+  "version": "0.1.0",
+  "homepage": "https://github.com/mhulse/evelyn",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mhulse/evelyn.git"
+  },
+  "author": {
+    "name": "Micky Hulse",
+    "url": "http://mky.io"
+  },
+  "production": "http://mky.io/evelyn/prod",
+  "dependencies": {
+    "gulp": "~3",
+    "gulp-rimraf": "~0",
+    "gulp-ruby-sass": "~0",
+    "gulp-autoprefixer": "~0",
+    "gulp-minify-css": "~0",
+    "gulp-jshint": "~1",
+    "gulp-notify": "~1",
+    "gulp-rename": "~1",
+    "gulp-livereload": "~2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "default": "gulp",
+    "watch": "gulp watch"
+  }
+}
