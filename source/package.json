@@ -12,22 +12,38 @@
     "name": "Micky Hulse",
     "url": "http://mky.io"
   },
+  "keywords": [
+    "html"
+  ],
+  "licenses": [
+    {
+      "type": "",
+      "url": "Copyright © Micky Hulse 2014. All rights reserved."
+    }
+  ],
   "production": "http://mky.io/evelyn/prod",
   "dependencies": {
     "gulp": "~3",
-    "gulp-rimraf": "~0",
-    "gulp-ruby-sass": "~0",
     "gulp-autoprefixer": "~0",
-    "gulp-minify-css": "~0",
+    "gulp-concat": "~2",
+    "gulp-header": "~1",
+    "gulp-if": "~1",
     "gulp-jshint": "~1",
+    "gulp-livereload": "~2",
+    "gulp-minify-css": "~0",
     "gulp-notify": "~1",
     "gulp-rename": "~1",
-    "gulp-livereload": "~2",
-    "gulp-header": "~1"
+    "gulp-rimraf": "~0",
+    "gulp-ruby-sass": "~0",
+    "gulp-template": "~0",
+    "gulp-preprocess": "~1",
+    "yargs": "~1"
   },
   "devDependencies": {},
   "scripts": {
-    "default": "gulp",
-    "watch": "gulp watch"
+    "dev": "gulp",
+    "prod": "gulp --type production",
+    "watch": "gulp watch",
+    "clean": "gulp clean"
   }
 }

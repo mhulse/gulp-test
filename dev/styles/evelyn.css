@@ -1,19 +1,12 @@
-/**
- * Evelyn “Angel” Martin
- * Jimmy?
- *
- * @author Micky Hulse
- * @link http://mky.io
- * @docs https://github.com/mhulse/evelyn
- * @copyright Copyright (c) function () {
-				return new Date().toISOString(); // yyyy
-			} Micky Hulse.
- * @version 0.1.0
- * @date function () {
-				return new Date().toISOString(); // yyyy/mm/dd
-			}
- */
+body {
+  background-color: #ccc;
+}
 
 .foo {
   color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  color: red;
+  content: '<%=pkg%>';
 }

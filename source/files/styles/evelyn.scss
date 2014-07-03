@@ -1,1 +1,5 @@
+body { background-color: #ccc; }
+
 .foo { color: rgba(#000, .5); }
+
+@import 'partials/main';
