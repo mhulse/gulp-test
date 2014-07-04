@@ -7,7 +7,8 @@ Jimmy?
 ```bash
 $ cd source/
 $ npm install
-$ npm run default
+$ npm run dev
+$ npm run prod
 ```
 
 ---
