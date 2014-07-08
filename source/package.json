@@ -17,17 +17,20 @@
   ],
   "licenses": [
     {
-      "type": "",
+      "type": "Foo license",
       "url": "Copyright © Micky Hulse 2014. All rights reserved."
     }
   ],
   "production": "http://mky.io/evelyn/prod",
   "dependencies": {
+    "dateformat": "~1",
     "del": "~0",
     "gulp": "~3",
+    "gulp-header": "~1",
     "gulp-jshint": "~1",
-    "gulp-ruby-sass": "~0",
     "gulp-preprocess": "~1",
+    "gulp-ruby-sass": "~0",
+    "lodash": "~2",
     "yargs": "~1"
   },
   "devDependencies": {},

@@ -18,6 +18,11 @@ var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var preprocess = require('gulp-preprocess');
 var sass = require('gulp-ruby-sass');
+var header = require('gulp-header');
+var _ = require('lodash');
+var fs = require('fs');
+var pkg = require('./package.json');
+var date = require('dateformat');
 
 /*----------------------------------( BUILD? )----------------------------------*/
 
@@ -40,6 +45,11 @@ gulp.task('styles', ['clean',], function() {
 		.pipe(sass({
 			precision : 14,
 			style : (build ? 'expanded' : 'compressed'),
+		}))
+		.pipe(header(fs.readFileSync('./files/text/banner_long.txt', 'utf8'), {
+			pkg : pkg,
+			_: _,
+			date: date,
 		}))
 		.pipe(gulp.dest('../' + target + '/styles'));
 	
@@ -77,7 +87,7 @@ gulp.task('watch', function() {
 	
 	gulp.watch(['./files/styles/**/*.scss',], ['styles',]);
 	
-	gulp.watch(['./gulpfile.js',], ['scripts',]);
+	gulp.watch(['./gulpfile.js',], ['scripts', 'styles',]);
 	
 	gulp.watch('./files/html/**/*.html', ['html',]);
 	

@@ -1,20 +1,14 @@
-    banner = {
-		'short' : '/*! ' +
-		          '<%= pkg.title || pkg.name %>' +
-		          '<%= pkg.version ? " v" + pkg.version : "" %>' +
-		          '<%= pkg.licenses ? " | " + _.pluck(pkg.licenses, "type").join(", ") : "" %>' +
-		          '<%= pkg.homepage ? " | " + pkg.homepage : "" %>' +
-		          ' */',
-		'long' : '/**\n' +
-		         ' * <%= pkg.title || pkg.name %>\n' +
-		         '<%= pkg.description ? " * " + pkg.description + "\\n" : "" %>' +
-		         ' *\n' +
-		         '<%= pkg.author.name ? " * @author " + pkg.author.name + "\\n" : "" %>' +
-		         '<%= pkg.author.url ? " * @link " + pkg.author.url + "\\n" : "" %>' +
-		         '<%= pkg.homepage ? " * @docs " + pkg.homepage + "\\n" : "" %>' +
-		         ' * @copyright Copyright (c) <%= year %> <%= pkg.author.name %>.\n' +
-		         '<%= pkg.licenses ? " * @license Released under the " + _.pluck(pkg.licenses, "type").join(", ") + ".\\n" : "" %>' +
-		         '<%= pkg.version ? " * @version " + pkg.version + "\\n" : "" %>' +
-		         ' * @date <%= today %>\n' +
-		         ' */\n\n',
-    },
+/**
+ * <%= pkg.title || pkg.name %>
+<%=
+	(pkg.description           ? ' * ' + pkg.description + '\n *'                                                          : ' *') +
+	(_.has(pkg.author, 'name') ? '\n * @author ' + pkg.author.name                                                         : ''  ) +
+	(_.has(pkg.author, 'url')  ? '\n * @link ' + pkg.author.url                                                            : ''  ) +
+	(pkg.homepage              ? '\n * @docs ' + pkg.homepage                                                              : ''  ) +
+	(_.has(pkg.author, 'name') ? '\n * @copyright Copyright (c) ' + date(new Date(), 'yyyy') + ' ' + pkg.author.name + '.' : ''  ) +
+	(pkg.licenses              ? '\n * @license Released under the ' + _.pluck(pkg.licenses, 'type').join(', ')            : ''  ) +
+	(pkg.version               ? '\n * @version ' + pkg.version                                                            : ''  )
+%>
+ * @date ${date(new Date(), 'yyyy/mm/dd')}
+ */
+
