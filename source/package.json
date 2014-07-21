@@ -1,12 +1,12 @@
 {
-  "title": "Evelyn “Angel” Martin",
-  "name": "evelyn",
-  "description": "Jimmy?",
+  "title": "Gulp test.",
+  "name": "test",
+  "description": "Lorem ipsum dolor sit amet.",
   "version": "0.1.0",
-  "homepage": "https://github.com/mhulse/evelyn",
+  "homepage": "https://github.com/mhulse/gulp-test",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mhulse/evelyn.git"
+    "url": "git://github.com/mhulse/gulp-test.git"
   },
   "author": {
     "name": "Micky Hulse",
@@ -21,7 +21,7 @@
       "url": "Copyright © Micky Hulse 2014. All rights reserved."
     }
   ],
-  "production": "http://mky.io/evelyn/prod",
+  "production": "http://mky.io/gulp-test/prod",
   "dependencies": {
     "dateformat": "~1",
     "del": "~0",
