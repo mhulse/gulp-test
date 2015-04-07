@@ -1,0 +1,23 @@
+/**
+ * Gulp test.
+ * Lorem ipsum dolor sit amet.
+ *
+ * @author Micky Hulse
+ * @link http://mky.io
+ * @docs https://github.com/mhulse/gulp-test
+ * @copyright Copyright (c) 2015 Micky Hulse.
+ * @license Released under the Foo license
+ * @version 0.1.0
+ * @date 2015/04/06
+ */
+
+body {
+  color: red;
+  content: '';
+  border: 1px solid red; }
+
+body {
+  background-color: #ccc; }
+
+.foo {
+  color: rgba(0, 0, 0, 0.5); }

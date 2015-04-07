@@ -18,7 +18,7 @@
   "licenses": [
     {
       "type": "Foo license",
-      "url": "Copyright © Micky Hulse 2014. All rights reserved."
+      "url": "Copyright © Micky Hulse 2015. All rights reserved."
     }
   ],
   "production": "http://mky.io/gulp-test/prod",
@@ -29,15 +29,14 @@
     "gulp-header": "~1",
     "gulp-jshint": "~1",
     "gulp-preprocess": "~1",
-    "gulp-ruby-sass": "~0",
+    "gulp-sass": "~1",
     "lodash": "~2",
     "yargs": "~1"
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "gulp",
-    "prod": "gulp --type production",
-    "clean": "gulp clean",
-    "watch": "gulp watch"
+    "gulp": "gulp",
+    "dev": "gulp --type development",
+    "prod": "gulp --type production"
   }
 }

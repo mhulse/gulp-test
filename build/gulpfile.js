@@ -17,7 +17,7 @@ var del = require('del');
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var preprocess = require('gulp-preprocess');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
 var header = require('gulp-header');
 var _ = require('lodash');
 var fs = require('fs');
@@ -41,7 +41,7 @@ gulp.task('clean', function(cb) {
 
 gulp.task('styles', ['clean',], function() {
 	
-	return gulp.src('./files/styles/evelyn.scss')
+	return gulp.src('./files/styles/test.scss')
 		.pipe(sass({
 			precision : 14,
 			style : (build ? 'expanded' : 'compressed'),
@@ -51,7 +51,7 @@ gulp.task('styles', ['clean',], function() {
 			_: _,
 			date: date,
 		}))
-		.pipe(gulp.dest('../' + target + '/styles'));
+		.pipe(gulp.dest('../' + target + '/styles/'));
 	
 });
 

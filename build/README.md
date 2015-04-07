@@ -3,7 +3,7 @@
 ## Usage
 
 ```bash
-$ cd source/
+# From this location, run:
 $ npm install
 $ npm run dev
 $ npm run prod
