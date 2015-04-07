@@ -12,9 +12,10 @@
 
 /*----------------------------------( PLUGINS )----------------------------------*/
 
+var gulp = require('gulp');
+var uglify = require('gulp-uglify');
 var args = require('yargs').argv;
 var del = require('del');
-var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var preprocess = require('gulp-preprocess');
 var sass = require('gulp-sass');
